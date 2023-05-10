@@ -1,12 +1,39 @@
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addBook } from "../redux/books/booksSlice";
+
 export default function AddBook() {
+  const [title, setTitle] = useState();
+  const [author, setAuthor] = useState();
+  const dispatch = useDispatch();
+
+  const handleAddbook = (e) => {
+    e.preventDefault();
+    const newBook = {
+      id: Math.random(),
+      title,
+      author
+    };
+    dispatch(addBook(newBook));
+    e.target.reset();
+  };
+
   return (
-    <form className="flex items-center justify-between px-2 py-4 shadow-md">
-      <input
-        className="border border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-        placeholder="Book Title"
-      />
+    <form onSubmit={handleAddbook} className="flex flex-col md:flex-row items-center gap-2 justify-between px-2 py-4 shadow-md">
+      <div className="flex flex-col md:flex-row gap-2">
+        <input
+          onChange={(e) => setTitle(e.target.value)}
+          className="border border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+          placeholder="Book Title"
+        />
+        <input
+          onChange={(e) => setAuthor(e.target.value)}
+          className="border border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+          placeholder="Book Author"
+        />
+      </div>
       <button
-        type="button"
+        type="submit"
         className="bg-blue-500 hover:bg-blue-400 py-1 px-2 text-white rounded-lg shadow-sm"
       >
         Add Book

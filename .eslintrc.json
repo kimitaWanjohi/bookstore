@@ -22,7 +22,8 @@
       "quotes": "off",
       "comma-dangle": "off",
       "arrow-parens": "off",
-      "object-curly-newline": "off"
+      "object-curly-newline": "off",
+      "react/prop-types": "off"
     },
     "overrides": [
       {
