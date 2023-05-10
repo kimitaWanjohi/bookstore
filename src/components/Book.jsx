@@ -1,4 +1,8 @@
+import { useDispatch } from "react-redux";
+import { removeBook } from "../redux/books/booksSlice";
+
 export default function Book({ book }) {
+  const dispatch = useDispatch();
   return (
     <div className="flex items-center justify-between px-2 py-4 shadow-md">
       <div className="flex items-start justify-start flex-col">
@@ -11,6 +15,7 @@ export default function Book({ book }) {
       </div>
       <button
         type="button"
+        onClick={() => dispatch(removeBook(book.id))}
         className="bg-red-500 hover:bg-red-400 py-1 px-2 text-white rounded-lg shadow-sm"
       >
         Delete Book
