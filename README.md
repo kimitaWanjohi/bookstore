@@ -13,7 +13,6 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo](#-live-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -50,14 +49,6 @@
 ### Key Features <a name="key-features"></a>
 
 - **Does Math calculations**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo 
-Live Demo is not available
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,12 +100,6 @@ Install this project with:
 - [@Github](https://github.com/kimitawanjohi)
 - [@Twitter](https://twitter.com/kimitaw)
 - [@LinkedIn](https://linkedin.com/in/kimitawanjohi)
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

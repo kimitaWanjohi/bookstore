@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { removeBook } from "../redux/books/booksSlice";
+import { delBook } from "../redux/books/booksSlice";
 
 export default function Book({ book }) {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ export default function Book({ book }) {
       </div>
       <button
         type="button"
-        onClick={() => dispatch(removeBook(book.id))}
+        onClick={() => dispatch(delBook(book.id))}
         className="bg-red-500 hover:bg-red-400 py-1 px-2 text-white rounded-lg shadow-sm"
       >
         Delete Book
