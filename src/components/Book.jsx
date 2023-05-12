@@ -6,17 +6,20 @@ export default function Book({ book }) {
   return (
     <div className="flex items-center justify-between px-2 py-4 shadow-md">
       <div className="flex items-start justify-start flex-col">
-        <h2 className="text-xl font-semibold">
+        <span className="text-sm text-gray-500">
+          {book.category}
+        </span>
+        <h2 className="text-2xl font-semibold">
           {book.title}
         </h2>
-        <h4 className="text-md italic text-grey-500">
+        <span className="text-sm italic text-blue-500">
           {book.author}
-        </h4>
+        </span>
       </div>
       <button
         type="button"
         onClick={() => dispatch(delBook(book.id))}
-        className="bg-red-500 hover:bg-red-400 py-1 px-2 text-white rounded-lg shadow-sm"
+        className="bg-blue-500 hover:bg-blue-400 py-1 px-2 text-white rounded-lg shadow-sm"
       >
         Delete Book
       </button>
