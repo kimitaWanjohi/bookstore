@@ -10,9 +10,10 @@ export default function AddBook() {
   const handleAddbook = (e) => {
     e.preventDefault();
     const newBook = {
-      id: Math.random(),
+      item_id: Math.random(),
       title,
-      author
+      author,
+      category: "sci-fi"
     };
     dispatch(addBook(newBook));
     e.target.reset();
