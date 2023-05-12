@@ -101,12 +101,6 @@ Install this project with:
 - [@Twitter](https://twitter.com/kimitaw)
 - [@LinkedIn](https://linkedin.com/in/kimitawanjohi)
 
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
