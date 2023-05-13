@@ -11,7 +11,7 @@ export default function Books() {
     dispatch(fetchBooks());
   }, [dispatch]);
   return (
-    <div className="flex w-full flex-col mt-4">
+    <div className="flex w-full gap-2 flex-col mt-4">
       {books.map((book) => (
         <Book key={book.id} book={book} />
       ))}
