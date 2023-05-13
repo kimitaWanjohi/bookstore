@@ -23,9 +23,17 @@ export default function Book({ book }) {
           <span className="text-sm text-blue-500 cursor-pointer">Edit</span>
         </div>
       </div>
-      <div className="h-[80px] w-[80px]">
-        <CircularProgressbar value={50} text="50%" />
+      <div className="flex items-center gap-4 justify-center">
+        <div className="h-[80px] w-[80px]">
+          <CircularProgressbar value={50} />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-5xl text-gray-500 font-light">50%</span>
+          <span className="text-md text-gray-400">Completed</span>
+        </div>
+
       </div>
+
       <div className="flex items-start justify-start flex-col gap-1 md:mr-12">
         <h4 className="text-md font-light text-gray-400">Current Chapter</h4>
         <h3 className="text-md">Chapter 18</h3>
